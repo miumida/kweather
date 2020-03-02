@@ -1,1 +1,1 @@
-""" kweather init. """
+""" K-Weather Living Jisu Sensor For Home Assistant """
