@@ -1,0 +1,10 @@
+{
+    "domain": "kweather",
+    "name": "kweather",
+    "documentation": "https://github.com/miumida/kweather",
+    "requirements": [],
+    "dependencies": [],
+    "codeowners": [
+        "@miumida"
+    ]
+}
