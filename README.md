@@ -3,7 +3,8 @@
 - 검은별31님께서 쓰셨던 카페글(<https://cafe.naver.com/koreassistant/809>)을 보고 센서로 만들어 봤습니다.
 - 케이웨더 생활지수에서 제공되는 나들이, 빨래, 세차, 불조심, 운동, 공해, 부패, 자외선, 난방, 감기, 냉방, 불쾌지수를 센서를 생성합니다.
 
-
+![screenshot_1](https://github.com/miumida/kweather/blob/master/img/Screenshot_1.png?raw=true)<br>
+![screenshot_2](https://github.com/miumida/kweather/blob/master/img/Screenshot_2.png?raw=true)<br>
 <br><br>
 
 ## Version history
