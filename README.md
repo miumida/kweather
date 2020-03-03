@@ -35,6 +35,8 @@ sensor:
      - uv
      - heating
      - cold
+     - cooling
+     - feel
 ```
 <br><br>
 ### 지역코드(area)
@@ -53,7 +55,7 @@ sensor:
 |09|전라남도 |
 |10|제주도|
 
-
+<br><br>
 ### 생활지수(monitored_conditions)
 - 아래 표를 참고하여 필요한 항목을 추가합니다.
 
@@ -72,7 +74,7 @@ sensor:
 |cooling  |냉방| 
 |feel     |불쾌| 
 
-
+<br><br>
 ## 참조 링크
 [1] 검은별31님의 우리나라 환경에 맞는 세차센서 사용하기(<https://cafe.naver.com/koreassistant/809>)<br>
 [2] 케이웨더 생활지수(<https://www.kweather.co.kr/forecast/forecast_living_jisu.html>)
