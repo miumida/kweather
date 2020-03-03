@@ -6,12 +6,12 @@
 ![screenshot_1](https://github.com/miumida/kweather/blob/master/img/Screenshot_1.png?raw=true)<br>
 ![screenshot_2](https://github.com/miumida/kweather/blob/master/img/Screenshot_2.png?raw=true)<br>
 <br><br>
-
 ## Version history
 | Version | Date        |               |
 | :-----: | :---------: | ------------- |
 | v1.0.0    | 2020.03.03  | First version  |
 
+<br><br>
 ## Installation
 - HA 설치 경로 아래 custom_components 에 파일을 넣어줍니다.<br>
   `<config directory>/custom_components/kweather/__init__.py`<br>
