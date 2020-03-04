@@ -45,7 +45,7 @@ _INFORMATIONS = {
     'fire'       : [4,  '불조심', 'mdi:fire'],
     'exercise'   : [5,  '운동',   'mdi:weight-lifter'],
 
-    'pollution'  : [7,  '공해',   'mdi:emoticon-dead-outline'],
+    'pollution'  : [7,  '공해',   'mdi:blur'],
     'corruption' : [12, '부패',   'mdi:emoticon-poop'],
     'uv'         : [10, '자외선', 'mdi:weather-sunny-alert'],
     'heating'    : [3,  '난방',   'mdi:hot-tub'],
