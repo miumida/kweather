@@ -26,7 +26,7 @@
 ```yaml
 sensor:
   - platform: kweather
-    area: 지역코드
+    area: '지역코드'
     monitored_conditions:
      - picnic
      - laundry
