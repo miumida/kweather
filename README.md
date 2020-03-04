@@ -13,12 +13,17 @@
 
 <br><br>
 ## Installation
+### Manual
 - HA 설치 경로 아래 custom_components 에 파일을 넣어줍니다.<br>
   `<config directory>/custom_components/kweather/__init__.py`<br>
   `<config directory>/custom_components/kweather/manifest.json`<br>
   `<config directory>/custom_components/kweather/sensor.py`<br>
 - configuration.yaml 파일에 설정을 추가합니다.<br>
 - Home-Assistant 를 재시작합니다<br>
+### HACS
+- HACS > SETTINGS 메뉴 선택
+- ADD CUSTOM REPOSITORY에 'https://github.com/miumida/kweather' 입력하고 Category에 'integration' 선택 후, 저장
+- HACS > INTEGRATIONS 메뉴 선택 후, 검색하여 
 <br><br>
 ## Usage
 ### configuration
