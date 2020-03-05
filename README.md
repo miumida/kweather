@@ -1,4 +1,8 @@
 # 케이웨더 생활지수 Sensor
+
+![HAKC)][hakc-shield]
+![Version v1.0.1][version-shield]
+
 케이웨더 생활지수(K-Weather Living Jisu) Sensor 입니다.<br>
 - 검은별31님께서 쓰셨던 카페글(<https://cafe.naver.com/koreassistant/809>)을 보고 센서로 만들어 봤습니다.
 - 케이웨더 생활지수에서 제공되는 나들이, 빨래, 세차, 불조심, 운동, 공해, 부패, 자외선, 난방, 감기, 냉방, 불쾌지수를 센서를 생성합니다.
@@ -10,6 +14,7 @@
 | Version | Date        |               |
 | :-----: | :---------: | ------------- |
 | v1.0.0    | 2020.03.03  | First version  |
+| v1.0.1    | 2020.03.04  | 공해지수 MDI 아이콘 변경  |
 
 <br><br>
 ## Installation
@@ -93,3 +98,6 @@ sensor:
 ## 참조 링크
 [1] 검은별31님의 우리나라 환경에 맞는 세차센서 사용하기(<https://cafe.naver.com/koreassistant/809>)<br>
 [2] 케이웨더 생활지수(<https://www.kweather.co.kr/forecast/forecast_living_jisu.html>)
+
+[version-shield]: https://img.shields.io/badge/version-v1.0.1-orange.svg
+[hakc-shield]: https://img.shields.io/badge/HAKC-Enjoy-blue.svg
