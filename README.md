@@ -23,7 +23,8 @@
 ### HACS
 - HACS > SETTINGS 메뉴 선택
 - ADD CUSTOM REPOSITORY에 'https://github.com/miumida/kweather' 입력하고 Category에 'integration' 선택 후, 저장
-- HACS > INTEGRATIONS 메뉴 선택 후, 검색하여 
+- HACS > INTEGRATIONS 메뉴 선택 후, 검색하여 설치
+
 <br><br>
 ## Usage
 ### configuration
