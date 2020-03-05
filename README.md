@@ -84,6 +84,12 @@ sensor:
 |feel     |불쾌| 
 
 <br><br>
+## Lovelace
+- button card를 통해서 조금 더 이쁘게 꾸며볼 수 있다.
+- 몽쉘좋아님의 "버튼카드 + 케이웨더 생활지수" 카페 게시글(<https://cafe.naver.com/koreassistant/848>)
+- 상큼한레몬님의 "케이웨더 생활지수 디자인 고민... (+ 디자인 추가)" 카페 게시글(<https://cafe.naver.com/koreassistant/853>)
+
+<br><br>
 ## 참조 링크
 [1] 검은별31님의 우리나라 환경에 맞는 세차센서 사용하기(<https://cafe.naver.com/koreassistant/809>)<br>
 [2] 케이웨더 생활지수(<https://www.kweather.co.kr/forecast/forecast_living_jisu.html>)
