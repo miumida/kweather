@@ -1,5 +1,6 @@
 {
-  "name": "K-Weather Living Jisu",
+  "name": "[KR] K-Weather Living Jisu",
   "country": "KR",
+  "domains": ["sensor"],  
   "render_readme": true
 }
