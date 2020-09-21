@@ -51,7 +51,7 @@ _INFORMATIONS = {
     'heating'    : [3,  '난방',   'mdi:hot-tub'],
     'cold'       : [6,  '감기',   'mdi:thermometer-minus'],
     'cooling'    : [8,  '냉방',   'mdi:air-filter'],
-    'feel'       : [9,  '불쾌',   'mdi:artist-outline'],
+    'feel'       : [9,  '불쾌',   'mdi:emoticon-confused-outline'],
 }
 
 PLATFORM_SCHEMA = PLATFORM_SCHEMA.extend({
