@@ -1,0 +1,17 @@
+{
+  "title": "K-Weather Living Jisu",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Set up K-Weather Living Jisu",
+        "description": "Do you want to set up K-Weather Living Jisu?"
+        "data": {
+          "area": "[%key:common::config_flow::data::area%]",
+        }
+      }
+    },
+    "abort": {
+      "one_instance_allowed": "Only a single instance is necessary."
+    }
+  }
+}
