@@ -10,6 +10,7 @@ from homeassistant.const import (CONF_NAME, CONF_MONITORED_CONDITIONS)
 from homeassistant.helpers.entity import Entity
 from homeassistant.util import Throttle
 
+from .const import MODEL, MANUFAC, SW_VERSION
 
 REQUIREMENTS = ['xmltodict==0.12.0']
 
@@ -62,12 +63,12 @@ PLATFORM_SCHEMA = PLATFORM_SCHEMA.extend({
 })
 
 
-def setup_platform(hass, config, add_entities, discovery_info=None):
+async def async_setup_platform(hass, config, async_add_entities, discovery_info=None):
     """Set up a Air Korea Sensors."""
     name = config.get(CONF_NAME)
     area = config.get(CONF_AREA)
 
-    informs = config.get(CONF_MONITORED_CONDITIONS)
+    informs = config.get(CONF_MONITORED_CONDITIONS) or None
 
     sensors = []
     if informs is not None:
@@ -76,7 +77,31 @@ def setup_platform(hass, config, add_entities, discovery_info=None):
         for variable in informs:
             sensors += [KWeatherSensor(name, variable, _INFORMATIONS[variable], real_time_api)]
 
-    add_entities(sensors, True)
+    async_add_entities(sensors, True)
+
+async def async_setup_entry(hass, config_entry, async_add_devices):
+    """Add a entity from a config_entry."""
+    name = config_entry.data[CONF_NAME]
+    area = config_entry.data[CONF_AREA]
+
+    informs = None
+
+    if CONF_MONITORED_CONDITIONS in config_entry.data:
+        informs = config_entry.data[CONF_MONITORED_CONDITIONS]
+
+    sensors = []
+    if informs is not None:
+        real_time_api = KWeatherAPI(area)
+
+        for variable in informs:
+            sensors += [KWeatherSensor(name, variable, _INFORMATIONS[variable], real_time_api)]
+    else:
+        real_time_api = KWeatherAPI(area)
+
+        for key in _INFORMATIONS:
+            sensors += [KWeatherSensor(name, key, _INFORMATIONS[key], real_time_api)]
+
+    async_add_devices(sensors, True)
 
 
 class KWeatherAPI:
@@ -121,8 +146,8 @@ class KWeatherSensor(Entity):
         self.var_state = ''
 
     @property
-    def entity_id(self):
-        """Return the entity ID."""
+    def unique_id(self):
+        """Return a unique ID to use for this sensor."""
         return 'sensor.kweather_{}'.format(self.var_id)
 
     @property
@@ -158,3 +183,13 @@ class KWeatherSensor(Entity):
         data = { 'jnum' : self.var_jnum,
                  'jtext' : self.var_jtext }
         return data
+
+    @property
+    def device_info(self):
+        return {
+            "identifiers": {('kweather')},
+            "name": 'K-Weather Living Jisu',
+            "sw_version": SW_VERSION,
+            "manufacturer": MANUFAC,
+            "model": MODEL,
+        }
