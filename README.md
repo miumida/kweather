@@ -9,6 +9,10 @@
 
 ![screenshot_1](https://github.com/miumida/kweather/blob/master/img/Screenshot_1.png?raw=true)<br>
 ![screenshot_2](https://github.com/miumida/kweather/blob/master/img/Screenshot_2.png?raw=true)<br>
+
+통합구성요소 적용<br>
+![integrations_01](https://github.com/miumida/kweather/blob/master/img/integrations_01.png?raw=true)<br>
+![integrations_02](https://github.com/miumida/kweather/blob/master/img/integrations_02.png?raw=true)<br>
 <br><br>
 ## Version history
 | Version | Date        |               |
