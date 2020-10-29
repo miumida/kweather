@@ -1,4 +1,4 @@
-"""Config flow for naver_weather."""
+"""Config flow for K-Weather."""
 import logging
 
 import voluptuous as vol
