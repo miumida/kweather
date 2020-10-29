@@ -25,7 +25,7 @@ class NaverWeatherConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
 
     def __init__(self):
         """Initialize flow."""
-        self._area: Optional[str] = "01"
+        self._area: Optional[str] = None
         self._name: Optional[str] = "kweather"
 
     async def async_step_user(self, user_input=None):
@@ -34,6 +34,7 @@ class NaverWeatherConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
 
         if user_input is not None:
             self._area          = user_input[CONF_AREA]
+            self._name          = user_input[CONF_NAME]
 
             return self.async_create_entry(title=DOMAIN, data=user_input)
 
