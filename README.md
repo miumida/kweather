@@ -16,6 +16,7 @@
 | v1.0.0    | 2020.03.03  | First version  |
 | v1.0.1    | 2020.03.04  | 공해지수 MDI 아이콘 변경  |
 | v1.0.2    | 2020.09.21  | 불쾌지수 MDI 아이콘 변경  |
+| v1.1.0    | 2020.10.28  | 통합구성요소 적용  |
 
 <br><br>
 ## Installation
@@ -100,5 +101,5 @@ sensor:
 [1] 검은별31님의 우리나라 환경에 맞는 세차센서 사용하기(<https://cafe.naver.com/koreassistant/809>)<br>
 [2] 케이웨더 생활지수(<https://www.kweather.co.kr/forecast/forecast_living_jisu.html>)
 
-[version-shield]: https://img.shields.io/badge/version-v1.0.1-orange.svg
+[version-shield]: https://img.shields.io/badge/version-v1.1.0-orange.svg
 [hakc-shield]: https://img.shields.io/badge/HAKC-Enjoy-blue.svg
