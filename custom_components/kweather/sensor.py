@@ -10,7 +10,7 @@ from homeassistant.const import (CONF_NAME, CONF_MONITORED_CONDITIONS)
 from homeassistant.helpers.entity import Entity
 from homeassistant.util import Throttle
 
-from .const import MODEL, MANUFAC, SW_VERSION
+from .const import DOMAIN, MODEL, MANUFAC, SW_VERSION
 
 REQUIREMENTS = ['xmltodict==0.12.0']
 
@@ -34,7 +34,6 @@ _JISU_URL = {
 
 DEFAULT_NAME = 'kweather'
 
-MIN_TIME_BETWEEN_API_UPDATES = timedelta(seconds=30)
 MIN_TIME_BETWEEN_SENSOR_UPDATES = timedelta(seconds=3600)
 
 SCAN_INTERVAL = timedelta(seconds=7200)
@@ -112,7 +111,6 @@ class KWeatherAPI:
         self.area = area
         self.result = {}
 
-    @Throttle(MIN_TIME_BETWEEN_API_UPDATES)
     def update(self):
         """Update function for updating api information."""
         try:
@@ -187,9 +185,10 @@ class KWeatherSensor(Entity):
     @property
     def device_info(self):
         return {
-            "identifiers": {('kweather')},
+            "identifiers": {(DOMAIN,)},
             "name": 'K-Weather Living Jisu',
             "sw_version": SW_VERSION,
             "manufacturer": MANUFAC,
             "model": MODEL,
+            "entry_type": "service"
         }
