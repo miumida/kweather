@@ -42,18 +42,18 @@ CONFIG_SCHEMA = vol.Schema(
 async def async_setup(hass: HomeAssistant, config: dict):
     """Set up local_ip from configuration.yaml."""
     conf = config.get(DOMAIN)
-    if conf:
-        hass.async_create_task(
-            hass.config_entries.flow.async_init(
-                DOMAIN, data=conf, context={"source": SOURCE_IMPORT}
-            )
-        )
+#    if conf:
+#        hass.async_create_task(
+#            hass.config_entries.flow.async_init(
+#                DOMAIN, data=conf, context={"source": SOURCE_IMPORT}
+#            )
+#        )
 
     return True
 
 
 async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry):
-    """Set up lotto645 from a config entry."""
+    """Set up kweather from a config entry."""
     hass.async_create_task(
         hass.config_entries.async_forward_entry_setup(entry, PLATFORM)
     )
