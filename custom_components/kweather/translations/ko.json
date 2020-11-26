@@ -5,8 +5,11 @@
         },
         "step": {
             "user": {
-                "description": "K-Weather Living Jisu\uCD94\uAC00\uD558\uAE30 \uC704\uD55C \uC124\uC815\uAC12\uC744 \uC785\uB825\uD558\uC138\uC694.",
-                "title": "K-Weather Living Jisu \uc124\uc815\ud558\uae30"
+                "description": "K-Weather Living Jisu \uCD94\uAC00\uD558\uAE30 \uC704\uD55C \uC124\uC815\uAC12\uC744 \uC785\uB825\uD558\uC138\uC694.",
+                "title": "K-Weather Living Jisu \uc124\uc815\ud558\uae30",
+                "data": {
+                    "area": "\uC9C0\uC5ED\uCF54\uB4DC"
+                }
             }
         }
     },
