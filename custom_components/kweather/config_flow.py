@@ -17,8 +17,8 @@ default_name = 'kweather'
 
 _LOGGER = logging.getLogger(__name__)
 
-class NaverWeatherConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
-    """Handle a config flow for Naver Weather."""
+class KWeatherConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
+    """Handle a config flow for K-Weather."""
 
     VERSION = 1
     CONNECTION_CLASS = config_entries.CONN_CLASS_CLOUD_POLL
