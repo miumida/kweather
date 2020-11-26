@@ -107,5 +107,5 @@ sensor:
 [1] 검은별31님의 우리나라 환경에 맞는 세차센서 사용하기(<https://cafe.naver.com/koreassistant/809>)<br>
 [2] 케이웨더 생활지수(<https://www.kweather.co.kr/forecast/forecast_living_jisu.html>)
 
-[version-shield]: https://img.shields.io/badge/version-v1.1.1-orange.svg
+[version-shield]: https://img.shields.io/badge/version-v1.1.2-orange.svg
 [hakc-shield]: https://img.shields.io/badge/HAKC-Enjoy-blue.svg
