@@ -29,7 +29,7 @@ CONF_AREA = 'area'
 CONFIG_SCHEMA = vol.Schema(
     {
         DOMAIN: vol.All(
-            cv.deprecated(CONF_NAME, invalidation_version="0.110"),
+#            cv.deprecated(CONF_NAME, invalidation_version="0.110"),
             vol.Schema({vol.Optional(CONF_NAME, default=DOMAIN): cv.string}),
             vol.Schema({vol.Required(CONF_AREA): cv.string}),
             vol.Schema({vol.Optional(CONF_MONITORED_CONDITIONS): vol.All(cv.ensure_list, [vol.In(_INFORMATIONS)])}),
