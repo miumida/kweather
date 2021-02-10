@@ -1,17 +1,17 @@
 {
     "config": {
         "abort": {
-            "single_instance_allowed": "\uD558\uB098\uC758 K-Weather Living Jisu\uB9CC \uAD6C\uC131\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4."
+            "single_instance_allowed": "\uD558\uB098\uC758 K-Weather \uC0DD\uD65C\uC9C0\uC218\uB9CC \uAD6C\uC131\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4."
         },
         "step": {
             "user": {
-                "description": "K-Weather Living Jisu \uCD94\uAC00\uD558\uAE30 \uC704\uD55C \uC124\uC815\uAC12\uC744 \uC785\uB825\uD558\uC138\uC694.",
-                "title": "K-Weather Living Jisu \uc124\uc815\ud558\uae30",
+                "description": "K-Weather \uC0DD\uD65C\uC9C0\uC218 \uCD94\uAC00\uD558\uAE30 \uC704\uD55C \uC124\uC815\uAC12\uC744 \uC785\uB825\uD558\uC138\uC694.",
+                "title": "K-Weather \uC0DD\uD65C\uC9C0\uC218 \uc124\uc815\ud558\uae30",
                 "data": {
                     "area": "\uC9C0\uC5ED\uCF54\uB4DC"
                 }
             }
         }
     },
-    "title": "K-Weather Living Jisu"
+    "title": "K-Weather \uC0DD\uD65C\uC9C0\uC218"
 }
