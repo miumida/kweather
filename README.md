@@ -24,6 +24,7 @@
 | v1.1.1    | 2020.11.10  | 통합구성요소 기기증가 오류 수정   |
 | v1.1.2    | 2020.11.26  | 통합구성요소 문구 수정   |
 | v1.1.3    | 2020.12.14  | 버전체계 변경에 따른 수정   |
+| v1.1.4    | 2021.03.05  | manifest.json 파일 version 정보 추가  |
 
 <br><br>
 ## Installation
@@ -108,5 +109,5 @@ sensor:
 [1] 검은별31님의 우리나라 환경에 맞는 세차센서 사용하기(<https://cafe.naver.com/koreassistant/809>)<br>
 [2] 케이웨더 생활지수(<https://www.kweather.co.kr/forecast/forecast_living_jisu.html>)
 
-[version-shield]: https://img.shields.io/badge/version-v1.1.3-orange.svg
+[version-shield]: https://img.shields.io/badge/version-v1.1.4-orange.svg
 [hakc-shield]: https://img.shields.io/badge/HAKC-Enjoy-blue.svg
