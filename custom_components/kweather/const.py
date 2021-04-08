@@ -2,6 +2,6 @@
 DOMAIN   = "kweather"
 PLATFORM = "sensor"
 
-SW_VERSION = "1.1.1"
-MODEL   = "케이웨더 생활지수"
+SW_VERSION = "1.2.0"
+MODEL   = "K-Weather 생활지수"
 MANUFAC = "Kweather"
