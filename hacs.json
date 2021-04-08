@@ -1,5 +1,5 @@
 {
-  "name": "[KR] K-Weather Living Jisu",
+  "name": "[KR] K-Weather 생활지수",
   "country": "KR",
   "domains": ["sensor"],  
   "render_readme": true
