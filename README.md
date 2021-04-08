@@ -15,7 +15,7 @@
 ![integrations_02](https://github.com/miumida/kweather/blob/master/img/integrations_02.png?raw=true)<br>
 <br><br>
 ## Version history
-| Version | Date        |               |
+| Version | Date        | 내용            |
 | :-----: | :---------: | ------------- |
 | v1.0.0    | 2020.03.03  | First version  |
 | v1.0.1    | 2020.03.04  | 공해지수 MDI 아이콘 변경  |
