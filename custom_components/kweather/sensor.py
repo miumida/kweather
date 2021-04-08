@@ -80,7 +80,7 @@ async def async_setup_platform(hass, config, async_add_entities, discovery_info=
 
 async def async_setup_entry(hass, config_entry, async_add_devices):
     """Add a entity from a config_entry."""
-    name = config_entry.data[CONF_NAME]
+    name = DEFAULT_NAME
     area = config_entry.data[CONF_AREA]
 
     informs = None
@@ -143,15 +143,22 @@ class KWeatherSensor(Entity):
         self.api = api
         self.var_state = ''
 
+        self.fs_name = None
+
     @property
     def unique_id(self):
         """Return a unique ID to use for this sensor."""
-        return 'sensor.kweather_{}'.format(self.var_id)
+        return 'sensor.kweather_{}_{}'.format(self.api.area, self.var_id)
 
     @property
     def name(self):
         """Return the name of the sensor, if any."""
-        return '{} 지수'.format(self.var_name)
+        if self.fs_name is None:
+
+            self.fs_name = '{} {} Score'.format(self.api.area, self.var_id)
+            return self.fs_name
+        else:
+            return '{} 지수'.format(self.var_name)
 
     @property
     def icon(self):
@@ -186,7 +193,7 @@ class KWeatherSensor(Entity):
     def device_info(self):
         return {
             "identifiers": {(DOMAIN,)},
-            "name": 'K-Weather Living Jisu',
+            "name": 'K-Weather 생활지수',
             "sw_version": SW_VERSION,
             "manufacturer": MANUFAC,
             "model": MODEL,
