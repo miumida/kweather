@@ -3,6 +3,8 @@ import logging
 
 import voluptuous as vol
 
+import homeassistant.helpers.config_validation as cv
+
 from homeassistant import config_entries
 from homeassistant.core import callback
 from homeassistant.const import (CONF_SCAN_INTERVAL)
@@ -14,6 +16,19 @@ CONF_NAME    = 'name'
 
 default_area = '01'
 default_name = 'kweather'
+
+_AREA = {
+    '01' : '서울/경기',
+    '02' : '강원영서',
+    '03' : '강원영동',
+    '04' : '충청북도',
+    '05' : '충청남도',
+    '06' : '경상북도',
+    '07' : '경상남도',
+    '08' : '전라북도',
+    '09' : '전라남도',
+    '10' : '제주도'
+}
 
 _LOGGER = logging.getLogger(__name__)
 
@@ -34,9 +49,12 @@ class KWeatherConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
 
         if user_input is not None:
             self._area          = user_input[CONF_AREA]
-            self._name          = user_input[CONF_NAME]
+            #self._name          = user_input[CONF_NAME]
 
-            return self.async_create_entry(title=DOMAIN, data=user_input)
+            uuid = 'kweather-area-{}'.format(self._area)
+            await self.async_set_unique_id(uuid)
+
+            return self.async_create_entry(title=_AREA[self._area], data=user_input)
 
         if self._async_current_entries():
             return self.async_abort(reason="single_instance_allowed")
@@ -55,8 +73,7 @@ class KWeatherConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
         default_area       = self._area
         schema = vol.Schema(
             {
-                vol.Required(CONF_AREA, default=default_area): str,
-                vol.Optional(CONF_NAME, default=default_name): str,
+                vol.Required(CONF_AREA, default=None): vol.In(_AREA),
             }
         )
 
