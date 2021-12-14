@@ -26,6 +26,7 @@
 | v1.1.3    | 2020.12.14  | 버전체계 변경에 따른 수정   |
 | v1.1.4    | 2021.03.05  | manifest.json 파일 version 정보 추가  |
 | v1.2.0    | 2021.04.08  | 통합구성요소 로직 수정 |
+| v1.2.1    | 2021.12.15  | Fixed bug |
 
 <br><br>
 ## Installation
@@ -116,5 +117,5 @@ sensor:
 <a href="https://www.buymeacoffee.com/miumida" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/white_img.png" alt="Buy Me A Coffee"></a>
 
 
-[version-shield]: https://img.shields.io/badge/version-v1.2.0-orange.svg
+[version-shield]: https://img.shields.io/badge/version-v1.2.1-orange.svg
 [hakc-shield]: https://img.shields.io/badge/HAKC-Enjoy-blue.svg
