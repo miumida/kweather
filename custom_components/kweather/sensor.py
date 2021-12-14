@@ -183,7 +183,7 @@ class KWeatherSensor(Entity):
         self.var_jtext = self.api.result[self.index].get('jtext','-')
 
     @property
-    def device_state_attributes(self):
+    def extra_state_attributes(self):
         """Attributes."""
         data = { 'jnum' : self.var_jnum,
                  'jtext' : self.var_jtext }
@@ -197,5 +197,5 @@ class KWeatherSensor(Entity):
             "sw_version": SW_VERSION,
             "manufacturer": MANUFAC,
             "model": MODEL,
-            "entry_type": "service"
+            "DeviceEntryType": "service"
         }
