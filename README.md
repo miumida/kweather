@@ -1,7 +1,7 @@
 # 케이웨더 생활지수 Sensor
 
 ![HAKC)][hakc-shield]
-![Version v1.0.1][version-shield]
+![Version v1.3.0][version-shield]
 
 케이웨더 생활지수(K-Weather Living Jisu) Sensor 입니다.<br>
 - 검은별31님께서 쓰셨던 카페글(<https://cafe.naver.com/koreassistant/809>)을 보고 센서로 만들어 봤습니다.
@@ -27,6 +27,7 @@
 | v1.1.4    | 2021.03.05  | manifest.json 파일 version 정보 추가  |
 | v1.2.0    | 2021.04.08  | 통합구성요소 로직 수정 |
 | v1.2.1    | 2021.12.15  | Fixed bug |
+| v1.3.0    | 2022.09.24  | Renewal |
 
 <br><br>
 ## Installation
@@ -44,26 +45,8 @@
 
 <br><br>
 ## Usage
-### configuration
-- HA 설정에 Local Weather RSS sensor를 추가합니다.<br>
-```yaml
-sensor:
-  - platform: kweather
-    area: '지역코드'
-    monitored_conditions:
-     - picnic
-     - laundry
-     - carwash
-     - fire
-     - exercise
-     - pollution
-     - corruption
-     - uv
-     - heating
-     - cold
-     - cooling
-     - feel
-```
+### Custom Integration
+- 구성 > 통합구성요소 > 통합구성요소 추가하기 > K-Weather 생활지수 선택 > 지역(area) 입력후, 확인.
 <br><br>
 ### 지역코드(area)
 - 아래 표를 참고하여 지역코드를 적습니다.
@@ -82,23 +65,23 @@ sensor:
 |10|제주도|
 
 <br><br>
-### 생활지수(monitored_conditions)
-- 아래 표를 참고하여 필요한 항목을 추가합니다.
+### 생활지수
+- 아래 표의 항목들이 지수센서로 등록됩니다.
 
 |코드|항목|
 |--------|------|
 |picnic   |나들이|
 |laundry  |빨래| 
-|carwash  |세차| 
+|carWash  |세차| 
 |fire     |불조심|
-|exercise |운동|
+|fitness |운동|
 |pollution|공해| 
-|corruption|부패| 
+|spoilage|부패| 
 |uv       |자외선|
-|heating  |난방| 
-|cold     |감기| 
-|cooling  |냉방| 
-|feel     |불쾌| 
+|cold  |냉방| 
+|heat  |난방| 
+|discomfort     |불쾌| 
+|influ     |감기| 
 
 <br><br>
 ## Lovelace
@@ -117,5 +100,5 @@ sensor:
 <a href="https://www.buymeacoffee.com/miumida" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/white_img.png" alt="Buy Me A Coffee"></a>
 
 
-[version-shield]: https://img.shields.io/badge/version-v1.2.1-orange.svg
+[version-shield]: https://img.shields.io/badge/version-v1.3.0-orange.svg
 [hakc-shield]: https://img.shields.io/badge/HAKC-Enjoy-blue.svg
