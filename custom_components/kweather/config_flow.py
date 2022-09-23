@@ -49,7 +49,6 @@ class KWeatherConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
 
         if user_input is not None:
             self._area          = user_input[CONF_AREA]
-            #self._name          = user_input[CONF_NAME]
 
             uuid = 'kweather-area-{}'.format(self._area)
             await self.async_set_unique_id(uuid)
