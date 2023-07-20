@@ -179,5 +179,5 @@ class kweatherSensor(CoordinatorEntity, SensorEntity):
             "sw_version": SW_VERSION,
             "manufacturer": MANUFAC,
             "model": MODEL,
-            "DeviceEntryType": "service"
+            "entry_type": "service"
         }
