@@ -29,6 +29,7 @@
 | v1.2.1    | 2021.12.15  | Fixed bug |
 | v1.3.0    | 2022.09.24  | Renewal |
 | v1.3.1    | 2023.07.20  | DeviceEntryType -> entry_type |
+| v1.3.2    | 2023.07.20  | DeviceEntryType 원복 |
 
 <br><br>
 ## Installation
@@ -101,5 +102,5 @@
 <a href="https://www.buymeacoffee.com/miumida" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/white_img.png" alt="Buy Me A Coffee"></a>
 
 
-[version-shield]: https://img.shields.io/badge/version-v1.3.1-orange.svg
+[version-shield]: https://img.shields.io/badge/version-v1.3.2-orange.svg
 [hakc-shield]: https://img.shields.io/badge/HAKC-Enjoy-blue.svg
