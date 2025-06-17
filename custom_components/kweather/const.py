@@ -1,8 +1,8 @@
 """kweather constants."""
 DOMAIN   = "kweather"
-PLATFORM = "sensor"
+PLATFORM = [ "sensor" ]
 
-SW_VERSION = "1.3.3"
+SW_VERSION = "1.3.4"
 MODEL   = "K-Weather 생활지수"
 MANUFAC = "Kweather"
 
