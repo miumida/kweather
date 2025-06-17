@@ -30,6 +30,7 @@
 | v1.3.0    | 2022.09.24  | Renewal |
 | v1.3.1    | 2023.07.20  | DeviceEntryType -> entry_type |
 | v1.3.2    | 2023.07.29  | DeviceEntryType 원복 |
+| v1.3.4.   | 2025.06.17  | Fixed bug |
 
 <br><br>
 ## Installation
