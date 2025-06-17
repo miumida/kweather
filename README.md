@@ -1,7 +1,7 @@
 # 케이웨더 생활지수 Sensor
 
 ![HAKC)][hakc-shield]
-![Version v1.3.3][version-shield]
+![Version v1.3.4][version-shield]
 
 케이웨더 생활지수(K-Weather Living Jisu) Sensor 입니다.<br>
 - 검은별31님께서 쓰셨던 카페글(<https://cafe.naver.com/koreassistant/809>)을 보고 센서로 만들어 봤습니다.
@@ -102,5 +102,5 @@
 <a href="https://www.buymeacoffee.com/miumida" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/white_img.png" alt="Buy Me A Coffee"></a>
 
 
-[version-shield]: https://img.shields.io/badge/version-v1.3.3-orange.svg
+[version-shield]: https://img.shields.io/badge/version-v1.3.4-orange.svg
 [hakc-shield]: https://img.shields.io/badge/HAKC-Enjoy-blue.svg
