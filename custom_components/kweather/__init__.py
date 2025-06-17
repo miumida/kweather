@@ -54,9 +54,7 @@ async def async_setup(hass: HomeAssistant, config: dict):
 
 async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry):
     """Set up kweather from a config entry."""
-    hass.async_create_task(
-        hass.config_entries.async_forward_entry_setup(entry, PLATFORM)
-    )
+    await hass.config_entries.async_forward_entry_setups(entry, PLATFORM)
 
     return True
 
